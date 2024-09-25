@@ -1,0 +1,126 @@
+/* estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ae9b2ef8-1f3f-4ad8-ae90-adc9f2a64814/d39qk75-002d352f-39d0-4607-bcf4-c63460a17ff0.jpg/v1/fill/w_755,h_755,q_75,strp/sonic_1___rebirth___texture_2_by_solon001_d39qk75-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzU1IiwicGF0aCI6IlwvZlwvYWU5YjJlZjgtMWYzZi00YWQ4LWFlOTAtYWRjOWYyYTY0ODE0XC9kMzlxazc1LTAwMmQzNTJmLTM5ZDAtNDYwNy1iY2Y0LWM2MzQ2MGExN2ZmMC5qcGciLCJ3aWR0aCI6Ijw9NzU1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vtLabxzTEmzQ5J4se2B4m8BgdHNq2yi8sdS5e1UWYgY');
+    /*textura de fundo*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* container principal da to-do list */
+.todo-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-area{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#nova-terefa{
+    width: 75%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#nova-tarefa:focus{
+    border-color: green;
+}
+
+/* estilizando o botão de adicionar tarefa */
+#adicionar-tarefa{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adicionar-tarefa:hover{
+    background-color: darkgreen;
+}
+
+/* lista de tarefas */
+ul#lista-tarefas{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Cada item de tarefa */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Botão de remover tarefa */
+  button.remover-tarefa {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.remover-tarefa:hover {
+    background-color: #e60000;
+  }
+  
+  /* Rodapé fixo no final da página */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  } 

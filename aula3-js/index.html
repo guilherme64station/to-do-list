@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.-0">
+  <title>To-Do List - SENAI</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link para a API de ícones (opcional, para estilizar botões) -->
+  <script src="<
+https://kit.fontawesome.com/a076d05399.js
+>" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Cabeçalho com título principal -->
+  <header>
+    <h1>SENAI To-Do List</h1>
+  </header> 
+  <!-- seção principal do aplicativo -->
+  <section class="todo-container">
+    <div class="input-area">
+    <!-- campo de entrada para adicionar novas tarefas -->
+     <input type="text" id="nova-tarefa"
+     placeholder="digite sua tarefa...">
+     <!-- botão para adicionar tarefas -->
+     <button id="adicionar-tarefa" click="btnAdicionar()"  >
+     <i class="fasfa-plus"></i>adicionar</button>   
+    </div>
+    <!-- lista onde as tarefas serão exibidas -->
+    <ul id="lista-tarefas"></ul>
+  </section>
+  <!-- rodapé fixo no final da página -->
+<footer>
+  <p>desenvolvido por gibi &copy; todos os direitos reservados</p>
+</footer>
+<!-- script JS -->
+<script src="script.js"></script>   
+ </body>
+</html>
